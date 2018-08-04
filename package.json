@@ -1,0 +1,19 @@
+{
+  "name": "alexa-phlex-skill",
+  "version": "0.1.1",
+  "description": "Alexa skill for Phlex",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "alexa-message-builder": "^1.2.0",
+    "alexa-sdk": "^1.0.25",
+    "alexa-skill-kit": "^1.0.0",
+    "node-fetch": "^2.2.0",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2"
+  }
+}

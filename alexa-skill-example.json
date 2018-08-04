@@ -1,0 +1,102 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "media center",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "PlayMedia",
+                    "slots": [
+                        {
+                            "name": "movie",
+                            "type": "AMAZON.Movie"
+                        },
+                        {
+                            "name": "player",
+                            "type": "playerName"
+                        },
+                        {
+                            "name": "series",
+                            "type": "AMAZON.TVSeries"
+                        }
+                    ],
+                    "samples": [
+                        "play {series}",
+                        "play {movie}",
+                        "play the show {series} on {player}",
+                        "play {series} on {player}",
+                        "play {series} on the {player}",
+                        "play the movie {movie} the {player}",
+                        "play {movie} on the {player}",
+                        "play {movie} on {player}"
+                    ]
+                },
+                {
+                    "name": "DownloadMedia",
+                    "slots": [
+                        {
+                            "name": "newMovie",
+                            "type": "AMAZON.Movie"
+                        },
+                        {
+                            "name": "newSeries",
+                            "type": "AMAZON.TVSeries"
+                        }
+                    ],
+                    "samples": [
+                        "grab {newSeries}",
+                        "grab {newMovie}",
+                        "fetch {newSeries}",
+                        "fetch {newMovie}",
+                        "download {newSeries}",
+                        "download {newMovie}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "playerName",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "kids room"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bedroom tv",
+                                "synonyms": [
+                                    "Bedroom"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "living room tv",
+                                "synonyms": [
+                                    "TV",
+                                    "Living Room"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
